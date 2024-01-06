@@ -7,10 +7,17 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <script src="https://kit.fontawesome.com/e56ee16fb9.js" crossorigin="anonymous"></script>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+
+  <%= render "layouts/flash_alerts" %>
+  <%= render "layouts/navbar" %>
+    <header> 
+      <%= image_tag 'iv_logo.jpg' %>
+    </header>
     <%= yield %>
   </body>
 </html>

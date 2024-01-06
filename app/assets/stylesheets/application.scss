@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+//   @font-face {
+//   font-family: "My Awesome Font";
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: block;
+//   src: font-url("lighters_demo.otf");
+// }
+
+  @import "font-awesome";
+
+  header img {
+    // background-color: transparent;
+    // text-align: center;
+    // text-shadow: 0cqi;
+    /* border: 20px solid  #2D9CDB; */
+    /* border-bottom: 20 px solid black; */
+    // border-bottom: thick double #32a1ce;
+    // color: black;
+    // padding-inline-start: 50px;
+    // margin: 20px;
+    height: auto;
+    width: 1000px;
+  }
+
+    nav ul li{
+    box-sizing: border-box;
+    display: inline-block;
+    visibility: visible;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    text-decoration-color: rgb(0,0,0);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    white-space-collapse: collapse;
+    -webkit-font-smoothing: antialiased;
+    overflow-wrap: break-word;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    padding: 10px;  
+  }
+
+  * {
+    background-color: rgba(0,0,0,0);
+    color: rgb(0, 0,0);
+    cursor: pointer;
+    text-decoration: none;
+
+    font-family: Helvetica, arial, sans-serif;
+  }
+
+  h2 {
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+  }
+
+  footer {
+    position: block;
+    margin: 50px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    }
+  
+  
