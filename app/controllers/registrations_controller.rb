@@ -7,7 +7,7 @@ class RegistrationsController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "Successfully created account"
-      redirect_to profile_path(@user)
+      redirect_to dashboard_path(@user)
     else
       # render :new
       flash.now[:danger] = @user.errors.full_messages.uniq.to_sentence
