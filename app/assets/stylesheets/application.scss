@@ -24,6 +24,20 @@
 
   @import "font-awesome";
 
+  body {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .profile_pic {
+    width: 45vh;
+    height: auto;
+  }
+
+  .bio {
+    color: blue;
+  }
+
   header img {
     // background-color: transparent;
     // text-align: center;
@@ -35,8 +49,45 @@
     // padding-inline-start: 50px;
     // margin: 20px;
     height: auto;
-    width: 1000px;
+    width: 500px;
   }
+
+  .container-flex {
+    display: flex;
+    margin: 10px
+  }
+
+  .side_by_side {
+    display: flex;
+    flex: 1;
+  }
+
+  .info {
+    /* Styles for the info class */
+    /* Your custom styles for lines 8-10 go here */
+    /* For example: */
+    p {
+      margin-bottom: 0px;
+       /* Adjust spacing between paragraphs */
+      /* Add more styles as needed */
+    }
+  
+    /* You can also style specific paragraphs if needed */
+    p:nth-child(1) {
+      /* Styles for the first paragraph in .info */
+    }
+  
+    p:nth-child(2) {
+      /* Styles for the second paragraph in .info */
+    }
+  
+    /* Add more styles as needed */
+  }
+
+
+
+
+
 
     nav ul li{
     box-sizing: border-box;
@@ -45,6 +96,7 @@
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.5px;
+    word-spacing: normal;
     line-height: 24px;
     text-decoration-color: rgb(0,0,0);
     text-decoration-line: none;
@@ -63,19 +115,36 @@
   * {
     background-color: rgba(0,0,0,0);
     color: rgb(0, 0,0);
-    cursor: pointer;
     text-decoration: none;
 
     font-family: Helvetica, arial, sans-serif;
   }
 
-  h2 {
+  .subheader {
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(192, 168, 35)
+  }
+
+  .certs {
+    font-size: small;
+    margin-top: 3.5%;
+  }
+  
+
+
+  .employee_name {
     font-family: Helvetica, arial, sans-serif;
     font-weight: 400;
     font-size: 48px;
   }
 
+
+
   footer {
+    margin-top: auto;
     position: block;
     margin: 50px;
     width: 100%;
@@ -84,4 +153,8 @@
     text-align: center;
     }
   
+  .bio {
+    margin-left: 5vh;
+    margin-top: 5vh;
+  }
   
