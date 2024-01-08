@@ -1,0 +1,22 @@
+<% @employees.each do |employee| %>
+  <div class="container-flex">
+    <div class="employee-info">
+      <img src="<%= employee.profile_image_url %>" class="profile_pic" alt="#{employee.first_name} #{employee.last_name}">
+          <h3><%= "#{employee.first_name} #{employee.last_name}" %></h3>
+      
+      <h4 class="employee_title"><%= employee.title %></h4>
+      <div class="info">
+        <p><%= "Certifications: ASA, ABV, CFA" %></p>
+        <p><%= "Phone: #{employee.office_phone}" %></p>
+        <p><%= "Email: #{employee.email}" %></p>
+        <p><%= link_to "LinkedIn", employee.linkedin_url %></p>
+      </div>
+    </div>
+    <section class="bio">
+      <% employee_bio = employee.bio.html_safe %>
+      <%= employee_bio %>
+    </section>
+  </div>
+<% end %>
+
+
