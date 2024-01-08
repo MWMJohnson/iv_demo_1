@@ -6,6 +6,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <script src="https://kit.fontawesome.com/e56ee16fb9.js" crossorigin="anonymous"></script>
     <%= javascript_importmap_tags %>
@@ -16,8 +19,20 @@
   <%= render "layouts/flash_alerts" %>
   <%= render "layouts/navbar" %>
     <header> 
-      <%= image_tag 'iv_logo.jpg' %>
+    <%= image_tag 'iv_logo.jpg' %>
     </header>
     <%= yield %>
+    <footer>
+      <h3><strong>Insight Valuations, LLC</strong></h3>
+      <h3>We Can Value That&#8482</h3>
+      <h3>Houston, Texas</h3>
+      <p>Copyright &copy 2023 Insight Valuations, LLC - All Rights Reserved.</p>
+      <p>
+        This site is <strong>SOON</strong> to be protected by reCAPTCHA and both the
+        <%= link_to "Google Privacy Policy", "https://policies.google.com/privacy" %>
+        and <%= link_to "Terms of Service", "https://policies.google.com/terms" %>
+        will apply.
+      </p>
+    </footer>
   </body>
 </html>
