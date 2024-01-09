@@ -29,6 +29,7 @@
     margin-right: 50px;
   }
 
+
   .profile_pic {
     width: 45vh;
     height: auto;
@@ -38,18 +39,10 @@
     color: blue;
   }
 
-  header img {
-    // background-color: transparent;
-    // text-align: center;
-    // text-shadow: 0cqi;
-    /* border: 20px solid  #2D9CDB; */
-    /* border-bottom: 20 px solid black; */
-    // border-bottom: thick double #32a1ce;
-    // color: black;
-    // padding-inline-start: 50px;
-    // margin: 20px;
+  .logo img {
+    width: 75vh;
     height: auto;
-    width: 500px;
+    margin-top: 2.5vh;
   }
 
   .container-flex {
@@ -84,33 +77,51 @@
     /* Add more styles as needed */
   }
 
+  // html {
+  //   font-size: 1rem;
+  // }
+  
+  // @include media-breakpoint-up(sm) {
+  //   html {
+  //     font-size: 1.2rem;
+  //   }
+  // }
+  
+  // @include media-breakpoint-up(md) {
+  //   html {
+  //     font-size: 1.4rem;
+  //   }
+  // }
+  
+  // @include media-breakpoint-up(lg) {
+  //   html {
+  //     font-size: 1.6rem;
+  //   }
+  // }
 
 
-
-
-
-    nav ul li{
-    box-sizing: border-box;
-    display: inline-block;
-    visibility: visible;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    word-spacing: normal;
-    line-height: 24px;
-    text-decoration-color: rgb(0,0,0);
-    text-decoration-line: none;
-    text-decoration-style: solid;
-    text-decoration-thickness: auto;
-    text-size-adjust: 100%;
-    text-transform: uppercase;
-    text-wrap: nowrap;
-    white-space-collapse: collapse;
-    -webkit-font-smoothing: antialiased;
-    overflow-wrap: break-word;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    padding: 10px;  
-  }
+  //   nav ul li{
+  //   box-sizing: border-box;
+  //   display: inline-block;
+  //   visibility: visible;
+  //   font-size: 20px;
+  //   font-weight: 700;
+  //   letter-spacing: 0.5px;
+  //   word-spacing: normal;
+  //   line-height: 24px;
+  //   text-decoration-color: rgb(0,0,0);
+  //   text-decoration-line: none;
+  //   text-decoration-style: solid;
+  //   text-decoration-thickness: auto;
+  //   text-size-adjust: 100%;
+  //   text-transform: uppercase;
+  //   text-wrap: nowrap;
+  //   white-space-collapse: collapse;
+  //   -webkit-font-smoothing: antialiased;
+  //   overflow-wrap: break-word;
+  //   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  //   padding: 10px;  
+  // }
 
   * {
     background-color: rgba(0,0,0,0);
@@ -121,10 +132,6 @@
   }
 
   .subheader {
-    font-family: Helvetica, arial, sans-serif;
-    font-weight: 400;
-    font-size: 100px;
-    text-align: center;
     color: rgb(192, 168, 35)
   }
 
