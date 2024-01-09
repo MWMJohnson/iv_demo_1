@@ -24,58 +24,134 @@
 
   @import "font-awesome";
 
-  header img {
-    // background-color: transparent;
-    // text-align: center;
-    // text-shadow: 0cqi;
-    /* border: 20px solid  #2D9CDB; */
-    /* border-bottom: 20 px solid black; */
-    // border-bottom: thick double #32a1ce;
-    // color: black;
-    // padding-inline-start: 50px;
-    // margin: 20px;
-    height: auto;
-    width: 1000px;
+  body {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
-    nav ul li{
-    box-sizing: border-box;
-    display: inline-block;
-    visibility: visible;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    line-height: 24px;
-    text-decoration-color: rgb(0,0,0);
-    text-decoration-line: none;
-    text-decoration-style: solid;
-    text-decoration-thickness: auto;
-    text-size-adjust: 100%;
-    text-transform: uppercase;
-    text-wrap: nowrap;
-    white-space-collapse: collapse;
-    -webkit-font-smoothing: antialiased;
-    overflow-wrap: break-word;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    padding: 10px;  
+
+  .profile_pic {
+    width: 45vh;
+    height: auto;
   }
+
+  .bio {
+    color: blue;
+  }
+
+  .logo img {
+    width: 75vh;
+    height: auto;
+    margin-top: 2.5vh;
+  }
+
+  .container-flex {
+    display: flex;
+    margin: 10px
+  }
+
+  .side_by_side {
+    display: flex;
+    flex: 1;
+  }
+
+  .info {
+    /* Styles for the info class */
+    /* Your custom styles for lines 8-10 go here */
+    /* For example: */
+    p {
+      margin-bottom: 0px;
+       /* Adjust spacing between paragraphs */
+      /* Add more styles as needed */
+    }
+  
+    /* You can also style specific paragraphs if needed */
+    p:nth-child(1) {
+      /* Styles for the first paragraph in .info */
+    }
+  
+    p:nth-child(2) {
+      /* Styles for the second paragraph in .info */
+    }
+  
+    /* Add more styles as needed */
+  }
+
+  // html {
+  //   font-size: 1rem;
+  // }
+  
+  // @include media-breakpoint-up(sm) {
+  //   html {
+  //     font-size: 1.2rem;
+  //   }
+  // }
+  
+  // @include media-breakpoint-up(md) {
+  //   html {
+  //     font-size: 1.4rem;
+  //   }
+  // }
+  
+  // @include media-breakpoint-up(lg) {
+  //   html {
+  //     font-size: 1.6rem;
+  //   }
+  // }
+
+
+  //   nav ul li{
+  //   box-sizing: border-box;
+  //   display: inline-block;
+  //   visibility: visible;
+  //   font-size: 20px;
+  //   font-weight: 700;
+  //   letter-spacing: 0.5px;
+  //   word-spacing: normal;
+  //   line-height: 24px;
+  //   text-decoration-color: rgb(0,0,0);
+  //   text-decoration-line: none;
+  //   text-decoration-style: solid;
+  //   text-decoration-thickness: auto;
+  //   text-size-adjust: 100%;
+  //   text-transform: uppercase;
+  //   text-wrap: nowrap;
+  //   white-space-collapse: collapse;
+  //   -webkit-font-smoothing: antialiased;
+  //   overflow-wrap: break-word;
+  //   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  //   padding: 10px;  
+  // }
 
   * {
     background-color: rgba(0,0,0,0);
     color: rgb(0, 0,0);
-    cursor: pointer;
     text-decoration: none;
 
     font-family: Helvetica, arial, sans-serif;
   }
 
-  h2 {
+  .subheader {
+    color: rgb(192, 168, 35)
+  }
+
+  .certs {
+    font-size: small;
+    margin-top: 3.5%;
+  }
+  
+
+
+  .employee_name {
     font-family: Helvetica, arial, sans-serif;
     font-weight: 400;
     font-size: 48px;
   }
 
+
+
   footer {
+    margin-top: auto;
     position: block;
     margin: 50px;
     width: 100%;
@@ -84,4 +160,8 @@
     text-align: center;
     }
   
+  .bio {
+    margin-left: 5vh;
+    margin-top: 5vh;
+  }
   

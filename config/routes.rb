@@ -6,9 +6,10 @@ Rails.application.routes.draw do
   root "welcome#index"
   resources :contact_form, only: %i[new create]
   # resources :users, only: %i[new create]
-  get "profile", to: "users#show"
+  get "dashboard", to: "users#show"
 
-  get "sign_up", to: "registrations#new"
-  post "sign_up", to: "registrations#create"
+  get "register", to: "registrations#new"
+  post "register", to: "registrations#create"
+  get "leadership", to: "employees#index"
 
 end
