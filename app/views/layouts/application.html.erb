@@ -15,24 +15,14 @@
   </head>
 
   <body>
-
-  <%= render "layouts/flash_alerts" %>
-  <%= render "layouts/navbar" %>
-    <header> 
-    <%= image_tag 'iv_logo.jpg' %>
-    </header>
+  <!-- <%= render "layouts/flash_alerts" %> -->
+  <!-- <%= render "layouts/navbar" %> -->
+  <%= render partial: "shared/navbar" %>
+  <%= render partial: "shared/header" %>
+  <div class="container">
+    <%= render partial: "shared/flash" %>
     <%= yield %>
-    <footer>
-      <h3><strong>Insight Valuations, LLC</strong></h3>
-      <h3>We Can Value That&#8482</h3>
-      <h3>Houston, Texas</h3>
-      <p>Copyright &copy 2023 Insight Valuations, LLC - All Rights Reserved.</p>
-      <p>
-        This site is <strong>SOON</strong> to be protected by reCAPTCHA and both the
-        <%= link_to "Google Privacy Policy", "https://policies.google.com/privacy" %>
-        and <%= link_to "Terms of Service", "https://policies.google.com/terms" %>
-        will apply.
-      </p>
-    </footer>
+  </div>
+  <%= render partial: "shared/footer" %>
   </body>
 </html>
