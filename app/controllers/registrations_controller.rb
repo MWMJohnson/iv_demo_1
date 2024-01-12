@@ -19,8 +19,8 @@ class RegistrationsController < ApplicationController
     def create 
     @user = User.new(user_params)
     if @user.save
-      session[:user_id] = @user.id
-      flash[:notice] = "Successfully created account"
+      login @user
+      flash[:notice] = "Successfully created account and logged in"
       redirect_to dashboard_path(@user)
     else
       # render :new
