@@ -8,8 +8,13 @@ Rails.application.routes.draw do
   # resources :users, only: %i[new create]
   get "dashboard", to: "users#show"
 
-  get "register", to: "registrations#new"
-  post "register", to: "registrations#create"
+  # get "register", to: "registrations#new"
+  # post "register", to: "registrations#create"
   get "leadership", to: "employees#index"
+  # get "login", to: "logins#new"
 
+  resource :registration
+  resource :session
+  resource :password_reset
+  resource :password
 end
