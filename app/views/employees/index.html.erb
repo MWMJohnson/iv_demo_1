@@ -1,9 +1,15 @@
+<div class="d-flex align-items-center justify-content-center">
+  <h1 class="subheader"> Meet The Team</h1>
+</div>
+<hr>
+
+<div class="container">
 <% @employees.each do |employee| %>
   <div class="container-flex">
     <div class="employee-info">
       <img src="<%= employee.profile_image_url %>" class="profile_pic" alt="#{employee.first_name} #{employee.last_name}">
-          <h3><%= "#{employee.first_name} #{employee.last_name}" %></h3>
-      
+      <div class="employee-nonpicture-info">
+      <h3 class="employee-name"><%= "#{employee.first_name} #{employee.last_name}" %></h3>
       <h4 class="employee_title"><%= employee.title %></h4>
       <div class="info">
         <p><%= "Certifications: ASA, ABV, CFA" %></p>
@@ -11,12 +17,14 @@
         <p><%= "Email: #{employee.email}" %></p>
         <p><%= link_to "LinkedIn", employee.linkedin_url %></p>
       </div>
+      </div>
     </div>
     <section class="bio">
-      <% employee_bio = employee.bio.html_safe %>
+      <% employee_bio = sanitize employee.bio %>
       <%= employee_bio %>
     </section>
   </div>
 <% end %>
+</div>
 
 

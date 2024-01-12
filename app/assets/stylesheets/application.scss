@@ -25,12 +25,26 @@
   @import "font-awesome";
 
   body {
-    margin-left: 50px;
-    margin-right: 50px;
+    // margin-left: 50px;
+    // margin-right: 50px;
+  }
+
+  .page-content {
+    margin-top: 2.5rem;
+  }
+
+  .register-link {
+    margin-right: 7.5px;
+  }
+
+  hr {
+    margin: auto;
+    width: 40%;
   }
 
 
   .profile_pic {
+    margin-top: 2rem;
     width: 45vh;
     height: auto;
   }
@@ -40,9 +54,10 @@
   }
 
   .logo img {
-    width: 75vh;
+    width: 72.5vh;
     height: auto;
-    margin-top: 2.5vh;
+    margin-top: 1.5rem;
+    padding-left: 5vh;
   }
 
   .container-flex {
@@ -59,8 +74,10 @@
     /* Styles for the info class */
     /* Your custom styles for lines 8-10 go here */
     /* For example: */
+    text-align: left;
+    margin-top: 1rem;
     p {
-      margin-bottom: 0px;
+      margin-left: 0rem;
        /* Adjust spacing between paragraphs */
       /* Add more styles as needed */
     }
@@ -132,7 +149,8 @@
   }
 
   .subheader {
-    color: rgb(192, 168, 35)
+    color: rgb(192, 168, 35);
+    margin-bottom: 1.5rem;
   }
 
   .certs {
@@ -142,10 +160,15 @@
   
 
 
-  .employee_name {
+  .employee-name {
     font-family: Helvetica, arial, sans-serif;
     font-weight: 400;
-    font-size: 48px;
+    margin-bottom: 0;
+    margin-top: .75rem;
+  }
+
+  .employee-nonpicture-info {
+    text-align: center;
   }
 
 
@@ -153,7 +176,7 @@
   footer {
     margin-top: auto;
     position: block;
-    margin: 50px;
+    margin-top: 3rem;
     width: 100%;
     left: 0;
     bottom: 0;
@@ -163,5 +186,10 @@
   .bio {
     margin-left: 5vh;
     margin-top: 5vh;
+  }
+
+  .navbar-custom-padding {
+    padding-left: 5vh;
+    padding-right: 10vh;
   }
   

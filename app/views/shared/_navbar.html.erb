@@ -1,5 +1,6 @@
-<nav class="navbar sticky-top navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
-<!-- <%= link_to "Login", register_path, class: "btn btn-primary btn-md mt-0" %> -->
+
+<nav class="navbar sticky-top navbar-expand-md navbar-light navbar-custom-padding" style="background-color: #e3f2fd;">
+<!-- <%= link_to "Login", new_registration_path, class: "btn btn-primary btn-md mt-0" %>
   <div class="container-fluid">
     <!-- <a class="navbar-brand" href="/">Home</a> -->
     <%= link_to "Home", root_path, class: "navbar-brand" %>
@@ -19,10 +20,15 @@
         <li class="nav-item">
           <%= link_to "Contact Us", new_contact_form_path, class: "nav-link" %>
         </li>
+        <% if user_signed_in? %>
+          <li class="nav-item">
+            <%= link_to "Dashboard", dashboard_path, class: "nav-link" %>
+          </li>
+        <% end %>
 
         <!-- 
         <li class="nav-item">
-          <%= link_to "Sign Up", register_path, class: "nav-link" %>
+          <%= link_to "Sign Up", new_registration_path, class: "nav-link" %>
         </li>
         -->
         <!--
@@ -31,13 +37,32 @@
         </li> 
         -->
       </ul>
+
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <!-- 
         <li class="nav-item">
-          <%= link_to "Register", register_path, class: "nav-link" %>
+          <%= link_to "Register", new_registration_path, method: :get, class: "nav-link" %>
         </li>
+        <li class="nav-item">
+          <%= button_to "Login", session_path, class: "btn btn-primary btn-md mt-0" %>
+        </li>
+        -->
+
+ 
+        <% if user_signed_in? %>
           <li class="nav-item">
-          <%= link_to "Login", register_path, class: "btn btn-primary btn-md mt-0" %>
-        </li>
+            <%= button_to "Log out", session_path, method: :delete, class: "btn btn-primary btn-md mt-0" %>
+          </li>
+        <% else %>
+          <li class="nav-item register-link">
+            <%= link_to "Register", new_registration_path, method: :get, class: "nav-link" %>
+          </li>
+            <li class="nav-item">
+            <%= link_to "Login", new_session_path, method: :get, class: "btn btn-primary btn-md mt-0" %>
+          </li>
+        <% end %>
+
+      
       </ul>
     </div>
   </div>
