@@ -7,8 +7,8 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-Employees.destroy_all
-Employees.create!(
+Employee.destroy_all
+Employee.create!(
   first_name: "Justin",
   last_name: "Ramirez",
   title: "CEO & Founder",
