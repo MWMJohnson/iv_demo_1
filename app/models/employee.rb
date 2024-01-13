@@ -1,8 +1,8 @@
 class Employee < ApplicationRecord
 
-  def initialize
+  # def initialize
 
-  end
+  # end
 
   def self.leadership_index
     Employee.where(in_leadership: true)
