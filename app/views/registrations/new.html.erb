@@ -6,28 +6,28 @@
 <div class="container">
   <%= form_with model: @user, local: true, data: { turbo: false}, class: "container", url: registration_path, method: :post do |form| %>
     <div class="mb-3">
-    <%= form.label :first_name, 'First name' %>
-    <%= form.text_field :first_name, class: "form-control", placeholder: "First Name" %>
+    <%= form.label :first_name, class: "required" %>
+    <%= form.text_field :first_name, class: "form-control", required: true, placeholder: "First Name" %>
     </div>
 
     <div class="mb-3">
-    <%= form.label :last_name, 'Last name' %>
-    <%= form.text_field :last_name, class: "form-control", placeholder: "Last Name" %>
+    <%= form.label :last_name, class: "required" %>
+    <%= form.text_field :last_name, class: "form-control", required: true, placeholder: "Last Name" %>
     </div>
 
     <div class="mb-3">
-    <%= form.label :email, 'Email' %>
-    <%= form.email_field :email, class: "form-control", placeholder: "Email" %>
+    <%= form.label :email, class: "required" %>
+    <%= form.email_field :email, class: "form-control", required: true, placeholder: "Email" %>
     </div>
 
     <div class="mb-3">
-    <%= form.label :password, 'Password' %>
-    <%= form.password_field :password, class: "form-control", placeholder: "Password" %>
+    <%= form.label :password, class: "required" %>
+    <%= form.password_field :password, class: "form-control", required: true, placeholder: "Password" %>
     </div>
 
     <div class="mb-3">
-    <%= form.label :password_confirmation, 'Password confirmation' %>
-    <%= form.password_field :password_confirmation, class: "form-control", placeholder: "Password" %>
+    <%= form.label :password_confirmation, class: "required" %>
+    <%= form.password_field :password_confirmation, class: "form-control", required: true, placeholder: "Password" %>
     </div>
 
     <div class="mb-3">
