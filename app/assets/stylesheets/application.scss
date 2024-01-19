@@ -22,6 +22,12 @@
 //   src: font-url("lighters_demo.otf");
 // }
 
+.required::after {
+  content: " \002A";
+  color: red;
+  font-size: 17.5px;
+}
+
   @import "font-awesome";
 
   body {
@@ -192,4 +198,6 @@
     padding-left: 5vh;
     padding-right: 10vh;
   }
+
+
   

@@ -6,16 +6,16 @@
 <div class="container">
   <%= form_with scope: :contact_form, url: contact_form_index_path, method: :post, local: true, class: "container" do |form| %>
     <div class="mb-3">
-      <%= form.label :name %>
-      <%= form.text_field :name, class: "form-control", placeholder: "Name" %>
+      <%= form.label :name, class: "required" %>
+      <%= form.text_field :name, class: "form-control", required: true, placeholder: "Name" %>
     </div>
     <div class="mb-3">
-      <%= form.label :email %>
-      <%= form.email_field :email, class: "form-control", placeholder: "Email" %>
+      <%= form.label :email, class: "required" %>
+      <%= form.email_field :email, class: "form-control", required: true, placeholder: "Email" %>
     </div>
     <div class="mb-3">
-      <%= form.label :message %>
-      <%= form.text_area :message, class: "form-control", placeholder: "Please provide general details of your valuation needs, including proposal purpose (potential sale, internal planning or other) and best method of contact." %>
+      <%= form.label :message, class: "required" %>
+      <%= form.text_area :message, class: "form-control", required: true, placeholder: "Please provide general details of your valuation needs, including proposal purpose (potential sale, internal planning or other) and best method of contact." %>
     </div>
     <div class="mb-3">
       <%= form.submit "Submit", class: "btn btn-primary" %>
