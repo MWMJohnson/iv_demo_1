@@ -24,7 +24,7 @@ class User < ApplicationRecord
   #         # and use confirmation to ensure they always match
   #         :confirmation => true
 
-  validates :password, presence: true, length: {minimum: 8 }
+  validates :password, presence: { on: :create}, length: {minimum: 8 , allow_nil: true}
 
   has_secure_password
   private
