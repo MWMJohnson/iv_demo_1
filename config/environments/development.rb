@@ -64,7 +64,7 @@ Rails.application.configure do
 
   # config.action_mailer.delivery_method = :smtp
   # config.action_mailer.smtp_settings = {
-  # :user_name => 'b59-------',
+  # :user_name => '-------',
   # :password => '',
   # :address => 'sandbox.smtp.mailtrap.io',
   # :host => 'sandbox.smtp.mailtrap.io',
