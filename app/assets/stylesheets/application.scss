@@ -30,6 +30,7 @@
 
   @import "font-awesome";
 
+
   body {
     // margin-left: 50px;
     // margin-right: 50px;
@@ -63,6 +64,7 @@
     width: 72.5vh;
     height: auto;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     padding-left: 5vh;
   }
 
@@ -74,6 +76,10 @@
   .side_by_side {
     display: flex;
     flex: 1;
+  }
+
+  .container a {
+    text-decoration: none; /* Removes underlines */
   }
 
   .info {
@@ -188,6 +194,14 @@
     bottom: 0;
     text-align: center;
     }
+
+  strong {
+    font-weight: bolder;
+    color: #60666a;
+  }
+  .footer-strong {
+    color: inherit;
+  }
   
   .bio {
     margin-left: 5vh;
@@ -200,5 +214,21 @@
     margin-right: 0%;
   }
 
+  .icon-link {
+    margin-right: 10px; /* Adjust the margin as per your preference */
+  }
 
+  .employee-name-cert {
+    display: inline-block;
+  }
+
+  .certifications {
+    font-size: smaller; /* Adjust the font size as needed */
+  }
+
+  .no-list-style {
+    list-style-type: none;
+  }
+
+  
   
