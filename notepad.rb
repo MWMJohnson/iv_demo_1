@@ -49,3 +49,56 @@
 ### 10. Create feature for Pop-Up to ask are you sure you "want to log out???"
 
 
+
+
+# <div class="info">
+# <p class="text-muted"><%= "Certifications: ASA, ABV, CFA" %></p>
+# <a href="tel:346-554-3706" class="icon-link">
+#   <i class="fas fa-phone fa-lg"></i>
+# </a>
+# <a href="mailto:matthewwmjohnson@gmail.com" class="icon-link">
+#   <i class="far fa-envelope fa-lg"></i>
+# </a>
+# <%= link_to employee.linkedin_url, class: "icon-link" do %>
+#   <i class="fab fa-linkedin fa-lg"></i>
+# <% end %>
+# </div>
+
+
+# "      <p class='text-muted'>Justin began his career in business valuation at HSSK (Houston, TX) in August 2016. His valuation work has focused primarily on Fair Market Value and Fair Value engagements, serving clients across a wide variety of industries for the purposes of estate and gift tax reporting, purchase price allocations, M&A transactions, internal planning purposes, partner buy-ins and buyouts, fairness opinions, asset-backed lending and regulatory reporting, among other purposes. Additionally, Justin has provided valuation services in support of litigation matters, including the determination of economic damages and providing expert testimony regarding the determination of lost wages.</p>\n    \n      <p class='text-muted'>He holds the Accredited Senior Appraiser (ASA) credential (American Society of Appraisers), the Accredited in Business Valuation (ABV) credential (American Institute of Certified Public Accountants) and the Chartered Financial Analyst® (CFA) designation awarded by the CFA Institute.</p>\n        \n      <p class='text-muted'>His clients have ranged from single-location family owned/operated furniture manufacturers to large, multi-national bio/pharmaceutical companies, capital intensive oilfield machinery & equipment manufacturers to service oriented enterprises such as architectural/engineering firms and direct-to-consumer housewares brands, and quite a few industries in between.</p>\n        \n      <p class='text-muted'>Outside of his employment as a business valuation specialist, Justin occasionally speaks at University of Houston functions, promoting the university's MS Finance and MBA programs, and discussing careers in realm of financial analysis and business valuation more generally.</p>\n        \n      <p class='text-muted'>Before joining HSSK, Justin worked as a Midstream Analyst for Hart Energy (now Stratas Advisors) and as the Senior Financial Analyst for the U.S.-based transportation company, Trimac Transportation. Prior to his work in the field of finance and analysis, Justin provided engineering and graphic design services, with a focus on oil & gas and power-generation facilities.</p>\n        \n      <p class='text-muted'>Justin holds a Master of Science degree in Finance from the University of Houston and a Bachelor of Science degree in Economics from Texas A&M University. </p>"
+
+
+
+
+# <div class="d-flex align-items-center justify-content-center">
+#   <h1 class="subheader">Edit Profile</h1>
+# </div>
+# <hr>
+
+# <div class="container">
+#   <%= form_with model: @user, local: true, data: { turbo: false}, class: "container", url: user_path(@user), method: :patch do |form| %>
+#     <div class="mb-3">
+#       <%= form.label :password_challenge, "Current Password", class: "required text-muted" %>
+#       <%= form.password_field :password_challenge, class: "form-control", required: true, placeholder: "Current Password" %>
+#     </div>
+
+#     <div class="mb-3">
+#     <%= form.label :first_name, class: "text-muted" %>
+#     <%= form.text_field :first_name, class: "form-control", placeholder: "First Name" %>
+#     </div>
+
+#     <div class="mb-3">
+#     <%= form.label :last_name, class: "text-muted" %>
+#     <%= form.text_field :last_name, class: "form-control", placeholder: "Last Name" %>
+#     </div>
+
+#     <div class="mb-3">
+#     <%= form.label :email, class: "text-muted" %>
+#     <%= form.email_field :email, class: "form-control", placeholder: "Email" %>
+#     </div>
+
+#     <div class="mb-3">
+#       <%= form.submit class: "btn btn-primary" %>
+#     </div>
+#   <% end %>
+#   </div>
