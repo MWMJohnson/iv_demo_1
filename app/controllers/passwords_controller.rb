@@ -6,7 +6,7 @@ class PasswordsController < ApplicationController
   end
 
   def update
-    if current_user.authenticate(password: params[:password_challenge])
+    if current_user.authenticate(params[:user][:password_challenge])
       if current_user.update(password_params)
         flash[:notice] = "Your password has been updated successfully."
         redirect_to dashboard_path(current_user)

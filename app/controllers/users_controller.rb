@@ -44,9 +44,14 @@ class UsersController < ApplicationController
           edit_params[edit_key] = user_params[edit_key]
         end
       end
-      current_user.update!(edit_params)
-      flash[:notice] = "Your changes have been saved successfully."
-      redirect_to dashboard_path(current_user)
+      if edit_params == {}
+        flash.now[:alert] = "You must select a section(s) to be edited to save changes."
+        render :edit, status: :unprocessable_entity
+      else
+        current_user.update!(edit_params)
+        flash[:notice] = "Your changes have been saved successfully."
+        redirect_to dashboard_path(current_user)
+      end
     else
       flash.now[:alert] = "Please enter correct current password."
       render :edit, status: :unprocessable_entity
