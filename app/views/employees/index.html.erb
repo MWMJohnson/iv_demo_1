@@ -1,5 +1,5 @@
 <div class="d-flex align-items-center justify-content-center">
-  <h1 class="subheader"> Meet The Team</h1>
+  <h1 class="subheader"> Leadership</h1>
 </div>
 <hr>
 
@@ -9,16 +9,32 @@
     <div class="employee-info">
       <img src="<%= employee.profile_image_url %>" class="profile_pic" alt="#{employee.first_name} #{employee.last_name}">
       <div class="employee-nonpicture-info">
-      <h3 class="employee-name"><%= "#{employee.first_name} #{employee.last_name}" %></h3>
+      <div class="employee-name-cert">
+        <h3 class="employee-name"><%= "#{employee.first_name} #{employee.last_name}" %><span class="certifications">, ASA, ABV, CFA</span></h3>
+      </div>
       <h4 class="employee_title"><%= employee.title %></h4>
       <div class="info">
-        <p><%= "Certifications: ASA, ABV, CFA" %></p>
-        <p><%= "Phone: #{employee.office_phone}" %></p>
-        <p><%= "Email: #{employee.email}" %></p>
-        <p><%= link_to "LinkedIn", employee.linkedin_url %></p>
-      </div>
-      </div>
-    </div>
+        <p class="mb-0">Phone: <%= link_to employee.office_phone, "tel:#{employee.office_phone}" %></p>
+        <p class="mb-0">Email: <%= link_to employee.email, "mailto:matthewwmjohnson@gmail.com" %></p>
+        <p class="text-muted"><%= link_to "LinkedIn", employee.linkedin_url %></p>
+        
+        
+        </div>
+        </div>
+   <div class="row justify-content-center">
+        <div class="col-12 col-md-6 text-center"> <!-- Adjust the column size as needed -->
+          <a href="tel:346-554-3706" class="icon-link">
+            <i class="fas fa-phone fa-lg"></i>
+          </a>
+          <a href="mailto:matthewwmjohnson@gmail.com" class="icon-link">
+            <i class="far fa-envelope fa-lg"></i>
+          </a>
+          <%= link_to employee.linkedin_url, class: "icon-link" do %>
+            <i class="fab fa-linkedin fa-lg"></i>
+          <% end %>
+        </div>
+        </div>
+        </div>
     <section class="bio">
       <% employee_bio = sanitize employee.bio %>
       <%= employee_bio %>
