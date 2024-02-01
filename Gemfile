@@ -49,7 +49,7 @@ gem "sassc-rails"
 # gem "image_processing", "~> 1.2"
 
 # gem 'faraday'
-# gem 'figaro'
+gem 'figaro'
 # gem 'jsonapi-serializer'
 
 # Use Font Awesome gem for custom fonts

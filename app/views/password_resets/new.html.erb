@@ -1,3 +1,18 @@
-<br>
-<br>
-<h3>This webpage is still in construction, but will be up and running shortly. Thank you for your patience!</h3>
+<div class="d-flex align-items-center justify-content-center">
+  <h1 class="subheader">Forgot Password?</h1>
+</div>
+<hr>
+
+<div class="container">
+  <%= form_with url: password_reset_path, local: true, data: { turbo: false}, class: "container" do |form| %>
+
+    <div class="mb-3">
+    <%= form.label :email, class: "required text-muted" %>
+    <%= form.text_field :email, class: "form-control", required: true, placeholder: "user@email.com" %>
+  </div>
+
+    <div class="mb-3">
+      <%= form.submit "Reset Password", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>

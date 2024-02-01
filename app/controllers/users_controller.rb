@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user!, only: [:show, :edit, :update]
+
+
   def new
     @user = User.new
   end
@@ -28,10 +31,34 @@ class UsersController < ApplicationController
   #   end
   # end
 
+  def edit
+    @user = current_user
+  end
+
   def update
+    if current_user.authenticate(params[:user][:password_challenge])
+      edit_params = {}
+      user_params.each do |key, value|
+        if key.start_with?("edit_") && value=="1"
+          edit_key = key.sub("edit_", "")
+          edit_params[edit_key] = user_params[edit_key]
+        end
+      end
+      current_user.update!(edit_params)
+      flash[:notice] = "Your changes have been saved successfully."
+      redirect_to dashboard_path(current_user)
+    else
+      flash.now[:alert] = "Please enter correct current password."
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+
+    reset_session  # Reset the session to log the user out
+    redirect_to root_path, notice: "Your account has been successfully deleted"
   end
 
   def show
@@ -41,7 +68,7 @@ class UsersController < ApplicationController
   end
 
   private
-  # def user_params
-  #   params.require(:user).permit(:first_name, :last_name, :email, :password)
-  # end
+  def user_params
+    params.require(:user).permit(:first_name, :last_name, :email, :password_challenge, :edit_first_name, :edit_last_name, :edit_email)
+  end
 end

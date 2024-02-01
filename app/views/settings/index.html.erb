@@ -1,0 +1,12 @@
+<div class="d-flex align-items-center justify-content-center">
+  <h1 class="subheader"> Settings</h1>
+</div>
+<hr>
+
+<div class="container-flex align-items-center justify-content-center">
+    <ul class="no-list-style">
+      <li><%= link_to "Edit Profile", edit_user_path(@user) %></li>
+      <li><%= link_to "Change Password", edit_password_path %></li>
+      <li><%= link_to "Delete Account", user_path(current_user), data: { "turbo-method": :delete, turbo_confirm: "Are you sure you want to delete your account? This cannot be undone." } %></li>
+    </ul>
+</div>
