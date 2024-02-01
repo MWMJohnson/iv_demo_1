@@ -6,8 +6,12 @@ Rails.application.routes.draw do
   root "welcome#index"
   resources :contact_form, only: %i[new create]
   # resources :users, only: %i[new create]
-  get "dashboard", to: "users#show"
-
+  
+  resources :users, only: [:edit, :update, :destroy] do
+    resources :settings, only: [:index]
+  end
+  
+  get "dashboard/:id", to: "users#show", as: :dashboard
   # get "register", to: "registrations#new"
   # post "register", to: "registrations#create"
   get "leadership", to: "employees#index"
@@ -17,4 +21,7 @@ Rails.application.routes.draw do
   resource :session
   resource :password_reset
   resource :password
+
+  get "password/reset/edit", to: "password_resets#edit"
+  patch "password/reset/edit", to: "password_resets#update"
 end
