@@ -38,6 +38,7 @@
 
   .page-content {
     margin-top: 2.5rem;
+    font-size:x-large
   }
 
   .register-link {
@@ -46,27 +47,27 @@
 
   hr {
     margin: auto;
-    width: 40%;
+    width: 2.5rem;
+    border-top: .125rem solid #595959;
+    // margin-bottom: 1.5rem;
   }
 
 
   .profile_pic {
     margin-top: 2rem;
-    width: 45vh;
+    width: 32rem;
     height: auto;
   }
 
-  .bio {
-    color: blue;
-  }
 
-  .logo img {
-    width: 72.5vh;
-    height: auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-left: 5vh;
-  }
+
+  // .logo img {
+  //   width: 72.5vh;
+  //   height: auto;
+  //   margin-top: 1.5rem;
+  //   margin-bottom: 1.5rem;
+  //   padding-left: 5vh;
+  // }
 
   .container-flex {
     display: flex;
@@ -161,8 +162,8 @@
   }
 
   .subheader {
-    color: rgb(192, 168, 35);
-    margin-bottom: 1.5rem;
+    margin-top: 6.5rem;
+    margin-bottom: 1.75rem;
   }
 
   .certs {
@@ -199,6 +200,12 @@
     font-weight: bolder;
     color: #60666a;
   }
+
+  .subheader-bold {
+    color: black;
+  }
+
+
   .footer-strong {
     color: inherit;
   }
@@ -207,6 +214,8 @@
     margin-left: 5vh;
     margin-top: 5vh;
   }
+
+
 
   .navbar-custom-padding {
     padding-left: 5vh;
@@ -230,5 +239,19 @@
     list-style-type: none;
   }
 
+  .employee-bio {
+    font-size: larger;
+    font-weight: 400;
+  }
+
+  .img-fluid {
+  }
   
+  
+  .logo-img {
+    margin-top: 6rem;
+    column-width: auto;
+    width: 50rem;
+    height: auto;
+  }
   
