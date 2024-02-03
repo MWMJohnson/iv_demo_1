@@ -71,7 +71,7 @@
 
 
 # <div class="d-flex align-items-center justify-content-center">
-#   <h1 class="subheader">Edit Profile</h1>
+#   <h1 class="display-5 subheader">Edit Profile</h1>
 # </div>
 # <hr>
 
@@ -102,3 +102,9 @@
 #     </div>
 #   <% end %>
 #   </div>
+
+
+
+
+
+
