@@ -104,7 +104,78 @@
 #   </div>
 
 
+### old employee index view code
 
+# <!--
+# <% @employees.each do |employee| %>
+
+#   <div class="align-items-center justify-content-center mt-3 text-muted">
+#   <div class="row justify-content-center">
+  
+#   <div class="col-12 col-md-6 text-center">
+#     <img src="<%= employee.profile_image_url %>" class="profile_pic" alt="#{employee.first_name} #{employee.last_name}">
+#     <h2>Justin Ramirez<span class="certifications">, ASA, ABV, CFA</span></h2>
+#     <h3>Managing Director</h3>
+#     <a href="tel:346-554-3706" class="icon-link">
+#       <i class="fas fa-phone fa-lg"></i>
+#     </a>
+#     <a href="mailto:matthewwmjohnson@gmail.com" class="icon-link">
+#       <i class="far fa-envelope fa-lg"></i>
+#     </a>
+#     <%= link_to employee.linkedin_url, class: "icon-link" do %>
+#       <i class="fab fa-linkedin fa-lg"></i>
+#     <% end %>
+#   </div>
+#   </div>
+# </div>
+# -->
+
+# <!--
+# <div class="container">
+#   <div class="container-flex">
+#     <div class="employee-info">
+#       <img src="<%= employee.profile_image_url %>" class="profile_pic" alt="#{employee.first_name} #{employee.last_name}">
+#       <div class="employee-nonpicture-info">
+#         <div class="employee-name-cert">
+#           <h3 class="employee-name"><%= "#{employee.first_name} #{employee.last_name}" %><span class="certifications">, ASA, ABV, CFA</span></h3>
+#           </div>
+#             <h4 class="employee_title"><%= employee.title %></h4>
+#             <!--
+#               <div class="info">
+#                 <p class="mb-0">Phone: <%= link_to employee.office_phone, "tel:#{employee.office_phone}" %></p>
+#                 <p class="mb-0">Email: <%= link_to employee.email, "mailto:matthewwmjohnson@gmail.com" %></p>
+#                 <p class="text-muted"><%= link_to "LinkedIn", employee.linkedin_url %></p>
+#               </div>
+#             -->
+#           </div>
+#           <div class="row justify-content-center">
+#             <div class="col-12 col-md-6 text-center">
+
+#             <!--
+#               <a href="tel:346-554-3706" class="icon-link">
+#                 <i class="fas fa-phone fa-lg"></i>
+#               </a>
+#               <a href="mailto:matthewwmjohnson@gmail.com" class="icon-link">
+#                 <i class="far fa-envelope fa-lg"></i>
+#               </a>
+#               <%= link_to employee.linkedin_url, class: "icon-link" do %>
+#               <i class="fab fa-linkedin fa-lg"></i>
+#           <% end %>
+#           </div>
+#             -->
+#       </div>
+#     </div>
+
+
+#       <!-- 
+#         <section class="bio">
+#           <% employee_bio = sanitize employee.bio %>
+#           <%= employee_bio %>
+#         </section>
+#       -->
+#   <% end %>
+# </div>
+# -->
 
 
 
