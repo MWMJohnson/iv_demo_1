@@ -30,19 +30,41 @@
 
   @import "font-awesome";
 
-
+  
   body {
-    // margin-left: 50px;
-    // margin-right: 50px;
+    padding-top: 56px; /* Adjust the body padding to accommodate the navbar */
   }
+  
+  .translucent-navbar {
+    background-color: rgba(178, 218, 244, 1) !important; /* Set the background color to translucent white */
+  }
+
+  @media (min-width: 767px) {
+    body {
+      padding-top: 0; /* Reset the body padding for larger screens */
+    }
+
+    .profile-section {
+      flex-direction: column; /* Stack elements vertically */
+    }
+
+    .employee-info {
+      margin-left: 0; /* Reset margin for small screens */
+      text-align: center; /* Center info */
+    }
+  }
+  
+  
 
   .page-content {
     margin-top: 2.5rem;
-    font-size:x-large
+    font-size:x-large;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
   }
 
-  .register-link {
-    margin-right: 7.5px;
+  .right-link {
+    margin-right: 5vh;
   }
 
   hr {
@@ -52,10 +74,18 @@
     // margin-bottom: 1.5rem;
   }
 
+  .profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
 
   .profile_pic {
     margin-top: 2rem;
-    width: 32rem;
+    width: 25rem;
     height: auto;
   }
 
@@ -198,6 +228,7 @@
     width: 100%;
     left: 0;
     bottom: 0;
+    margin-bottom: 0;
     text-align: center;
     }
 
@@ -222,14 +253,19 @@
 
 
 
-  .navbar-custom-padding {
-    padding-left: 5vh;
-    padding-right: 5vh;
-    margin-right: 0%;
+  .navbar-start-margin {
+    // padding-left: 5vh;
+    margin-left: 5vh;
+    // padding-right: 5vh;
+    // margin-right: 0%;
   }
 
   .icon-link {
-    margin-right: 10px; /* Adjust the margin as per your preference */
+    margin: 0 1.25vh /* Adjust the margin as per your preference */
+  }
+
+  .icon-links {
+  margin-top: 10px; /* Adjust as needed */
   }
 
   .employee-name-cert {
@@ -247,10 +283,17 @@
   .employee-bio {
     font-size: larger;
     font-weight: 400;
+    // padding-right: 2vh;
+  }
+  .employee-bio-2 {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
   }
 
   .img-fluid {
   }
+  
+
   
   
   .logo-img {
