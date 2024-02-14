@@ -39,7 +39,38 @@
     background-color: rgba(178, 218, 244, 1) !important; /* Set the background color to translucent white */
   }
 
-  @media (min-width: 767px) {
+  .navbar-start-margin {
+    // padding-left: 5vh;
+    margin-left: 5vh;
+    // padding-right: 5vh;
+    // margin-right: 0%;
+  }
+
+  .profile-pic {
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+  }
+
+  .employee-bio-2 {
+    // margin-right: 1.5rem;
+    // margin-left: 1.5rem;
+    text-align: justify;
+    padding: 0 15px;
+  }
+
+  .page-content {
+    margin-top: 2.5rem;
+    font-size:x-large;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .subheader-home {
+    margin-top: 6.5rem;
+    margin-bottom: 1.75rem;
+  }
+
+  @media (max-width: 767px) {
     body {
       padding-top: 0; /* Reset the body padding for larger screens */
     }
@@ -49,19 +80,42 @@
     }
 
     .employee-info {
-      margin-left: 0; /* Reset margin for small screens */
-      text-align: center; /* Center info */
+      margin-left: 0;
+      text-align: center;
+
+    }
+    .navbar-start-margin {
+      margin-left: 0;
+    }
+
+    .profile-pic {
+      max-width: 80%; /* Adjust the width of the image for smaller screens */
+    }
+
+    .employee-bio-2 {
+      padding: 0 1px; /* Remove padding on smaller screens */
+    }
+
+    .page-content {
+      margin-top: 1.5rem;
+      font-size: medium;
+      max-width: 100%;
+    }
+
+    .subheader-home {
+      margin-top: 1.75rem;
+      margin-bottom: 1rem;
     }
   }
-  
-  
 
-  .page-content {
-    margin-top: 2.5rem;
-    font-size:x-large;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
+
+  @media (min-width: 768px) and (max-width: 991px) {
+  .employee-bio-2 {
+    margin-top: 1.5rem; /* Adjust margin to create space */
+    text-align: justify; /* Ensure proper text alignment */
   }
+}
+
 
   .right-link {
     margin-right: 5vh;
@@ -83,11 +137,7 @@
   }
 
 
-  .profile_pic {
-    margin-top: 2rem;
-    width: 25rem;
-    height: auto;
-  }
+
 
 
 
@@ -191,10 +241,7 @@
     font-family: Helvetica, arial, sans-serif;
   }
 
-  .subheader-home {
-    margin-top: 6.5rem;
-    margin-bottom: 1.75rem;
-  }
+
 
   .subheader {
     margin-top: 4rem;
@@ -252,14 +299,6 @@
   }
 
 
-
-  .navbar-start-margin {
-    // padding-left: 5vh;
-    margin-left: 5vh;
-    // padding-right: 5vh;
-    // margin-right: 0%;
-  }
-
   .icon-link {
     margin: 0 1.25vh /* Adjust the margin as per your preference */
   }
@@ -281,14 +320,11 @@
   }
 
   .employee-bio {
-    font-size: larger;
+    font-size: large;
     font-weight: 400;
     // padding-right: 2vh;
   }
-  .employee-bio-2 {
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-  }
+
 
   .img-fluid {
   }
@@ -302,4 +338,5 @@
     width: 50rem;
     height: auto;
   }
+
   
