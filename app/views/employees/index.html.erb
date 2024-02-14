@@ -4,45 +4,39 @@
 
 
 <hr>
-<% @employees.each do |employee| %>
-  <div class="profile-section">
-    <img src="<%= employee.profile_image_url %>" class="profile-pic" alt="#{employee.first_name} #{employee.last_name}">
-    <div class="employee-info">
-      <h2><%= "#{employee.first_name} #{employee.last_name}" %><span class="certifications">, ASA, ABV, CFA</span></h2>
-      <h3><%= employee.title %></h3>
-      <div class="icon-links">
-        <a href="tel:346-554-3706" class="icon-link">
-          <i class="fas fa-phone fa-lg"></i>
-        </a>
-        <a href="mailto:matthewwmjohnson@gmail.com" class="icon-link">
-          <i class="far fa-envelope fa-lg"></i>
-        </a>
-        <%= link_to employee.linkedin_url, class: "icon-link" do %>
-          <i class="fab fa-linkedin fa-lg"></i>
-        <% end %>
+
+<div class="profile-section mt-5">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="employee-info">
+        <img src="<%= @employee.profile_image_url %>" class="profile-pic" alt="#{@employee.first_name} #{@employee.last_name}">
+        <h2 class="mt-1"><%= "#{@employee.first_name} #{@employee.last_name}" %><span class="certifications">, ASA, ABV, CFA</span></h2>
+        <h3><%= @employee.title %></h3>
+        <div class="icon-links">
+          <a href="tel:346-554-3706" class="icon-link">
+            <i class="fas fa-phone fa-lg"></i>
+          </a>
+          <a href="mailto:matthewwmjohnson@gmail.com" class="icon-link">
+            <i class="far fa-envelope fa-lg"></i>
+          </a>
+          <%= link_to @employee.linkedin_url, class: "icon-link" do %>
+            <i class="fab fa-linkedin fa-lg"></i>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="employee-bio-2 mt-3">
+        <p class='text-muted employee-bio'>Justin began his career in business valuation at HSSK (Houston, TX) in August 2016. His valuation work has focused primarily on Fair Market Value and Fair Value engagements, serving clients across a wide variety of industries for the purposes of estate and gift tax reporting, purchase price allocations, M&A transactions, internal planning purposes, partner buy-ins and buyouts, fairness opinions, asset-backed lending and regulatory reporting, among other purposes. Additionally, Justin has provided valuation services in support of litigation matters, including the determination of economic damages and providing expert testimony regarding the determination of lost wages.</p>
+
+        <p class='text-muted employee-bio'>He holds the Accredited Senior Appraiser (ASA) credential (American Society of Appraisers), the Accredited in Business Valuation (ABV) credential (American Institute of Certified Public Accountants) and the Chartered Financial Analyst® (CFA) designation awarded by the CFA Institute.</p>
+
+        <p class='text-muted employee-bio'>His clients have ranged from single-location family owned/operated furniture manufacturers to large, multi-national bio/pharmaceutical companies, capital intensive oilfield machinery & equipment manufacturers to service oriented enterprises such as architectural/engineering firms and direct-to-consumer housewares brands, and quite a few industries in between.</p>
+
+        <p class="text-muted employee-bio">Outside of his employment as a business valuation specialist, Justin occasionally speaks at University of Houston functions, promoting the university's MS Finance and MBA programs, and discussing careers in realm of financial analysis and business valuation more generally.</p>
+
+        <p class="text-muted employee-bio">Before joining HSSK, Justin worked as a Midstream Analyst for Hart Energy (now Stratas Advisors) and as the Senior Financial Analyst for the U.S.-based transportation company, Trimac Transportation. Prior to his work in the field of finance and analysis, Justin provided engineering and graphic design services, with a focus on oil & gas and power-generation facilities.</p>
       </div>
     </div>
   </div>
-<% end %>
-
-
-<div class="container mt-4">
-  <div class="employee-bio-2">
-    <p class='text-muted employee-bio'>Justin began his career in business valuation at HSSK (Houston, TX) in August 2016. His valuation work has focused primarily on Fair Market Value and Fair Value engagements, serving clients across a wide variety of industries for the purposes of estate and gift tax reporting, purchase price allocations, M&A transactions, internal planning purposes, partner buy-ins and buyouts, fairness opinions, asset-backed lending and regulatory reporting, among other purposes. Additionally, Justin has provided valuation services in support of litigation matters, including the determination of economic damages and providing expert testimony regarding the determination of lost wages.</p>
-
-    <p class='text-muted employee-bio'>He holds the Accredited Senior Appraiser (ASA) credential (American Society of Appraisers), the Accredited in Business Valuation (ABV) credential (American Institute of Certified Public Accountants) and the Chartered Financial Analyst® (CFA) designation awarded by the CFA Institute.</p>
-
-    <p class='text-muted employee-bio'>His clients have ranged from single-location family owned/operated furniture manufacturers to large, multi-national bio/pharmaceutical companies, capital intensive oilfield machinery & equipment manufacturers to service oriented enterprises such as architectural/engineering firms and direct-to-consumer housewares brands, and quite a few industries in between.</p>
-
-    <p class="text-muted employee-bio">Outside of his employment as a business valuation specialist, Justin occasionally speaks at University of Houston functions, promoting the university's MS Finance and MBA programs, and discussing careers in realm of financial analysis and business valuation more generally.</p>
-
-    <p class="text-muted employee-bio">Before joining HSSK, Justin worked as a Midstream Analyst for Hart Energy (now Stratas Advisors) and as the Senior Financial Analyst for the U.S.-based transportation company, Trimac Transportation. Prior to his work in the field of finance and analysis, Justin provided engineering and graphic design services, with a focus on oil & gas and power-generation facilities.</p>
-  </div>
 </div>
-
-
-
-
-
-
-
